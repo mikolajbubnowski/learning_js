@@ -7,12 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <input type="number"  id="liczba"> -->
-    <input type="text" id="imie">
-    <!-- <button onclick="generuj()">Generuj</button> -->
+    <input type="text" id="imie"> -->
     <button onclick="pobierzImie()">Generuj</button>
     <button onclick="generujHtml()">Generuj HTMLA</button>
-    <!-- <table id="table"></table> -->
     <div id="data"></div>
     
     <script>
@@ -46,11 +43,12 @@
             console.log(generatedDiv)
             document.getElementById("data").appendChild(generatedDiv)
         }
+       
 
-        // const imie = prompt("Wprowadź imię")
-        // helloName(imie)
-        // helloName("Test")
-        // helloName("Paweł")
+        const imie = prompt("Wprowadź imię")
+        helloName(imie)
+        helloName("Test")
+        helloName("Paweł")
         
     </script>
 
