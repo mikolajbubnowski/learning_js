@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="imie"> -->
+    <button onclick="pobierzImie()">Generuj</button>
+    <button onclick="generujHtml()">Generuj HTMLA</button>
+    <div id="data"></div>
+    
+    <script>
+
+        let counterClick = 1
+
+        function hello(){
+            console.log("Hello World!")
+        }
+
+        function helloName(name){
+            console.log(`hello ${name}`)
+        }
+
+        function pobierzImie(){
+            alert("Działa")
+            const imie = document.getElementById("imie").value
+            helloName(imie)
+        }
+
+        function generujHtml(){
+            document.getElementById("data").innerHTML = ""
+            let generatedDiv = document.createElement("div")
+            console.log(generatedDiv)
+            let generatedH3 = document.createElement("h3")
+            generatedH3.innerText = `Kliknięto ${counterClick} razy`
+            counterClick++
+            console.log(generatedH3)
+            console.log("-----")
+            generatedDiv.appendChild(generatedH3)
+            console.log(generatedDiv)
+            document.getElementById("data").appendChild(generatedDiv)
+        }
+       
+
+        const imie = prompt("Wprowadź imię")
+        helloName(imie)
+        helloName("Test")
+        helloName("Paweł")
+        
+    </script>
+
+</body>
+</html>
