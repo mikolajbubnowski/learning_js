@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <label for="nazwa firmy">Nazwa firmy*</label>
+        <input type="text" name="nazwa firmy" required><br>
+        <label for="forma prawna firmy">Forma prawna firmy*</label>
+        <input type="text" name="forma prawna firmy" required><br>
+
+        <label for="data rejestracji firmy">Data rejestracji firmy*</label>
+        <input type="text" name="data rejestracji" required><br>
+        <label for="ulica">Ulica*</label>
+        <input type="text" name="ulica" required><br>
+        <label for="nr domu lokalu">Nr domu* / lokalu</label>
+        <input type="text" name="nr domu" required> / 
+        <input type="text" name="lokalu"><br>
+        <label for="kod pocztowy">Kod pocztowy*</label>
+        <input type="text" name="kod pocztowy" pattern="[0-9]{2}-[0-9]{3}" maxlength="6" required><br>
+        <label for="miasto">Miasto*</label>
+        <input type="text" name="miasto" required><br>
+        <label for="wojewodztwo">Województwo</label>
+        <select name="wojewodztwo">
+            <option value="" selected disabled hidden >Wybierz</option>
+            <option value="1">Dolnośląskie</option>
+            <option value="2">Kujawsko-Pomorskie</option>
+            <option value="3">Lubelskie</option>
+            <option value="4">Lubuskie</option>
+            <option value="5">Łódzkie</option>
+            <option value="6">Małopolskie</option>
+            <option value="7">Mazowieckie</option>
+            <option value="8">Opolskie</option>
+            <option value="9">Podkarpackie</option>
+            <option value="10">Podlaskie</option>
+            <option value="11">Pomorskie</option>
+            <option value="12">Śląskie</option>
+            <option value="13">Świętokrzyskie</option>
+            <option value="14">Warmińsko-Mazurskie</option>
+            <option value="15">Wielkopolskie</option>
+            <option value="16">Zachodniopomorskie</option>
+        </select>
+        <br>
+        <label for="nip">NIP*</label>
+        <input type="text" name="nip" minlength="10" maxlength="10" required><br>
+        <label for="region">REGION*</label>
+        <input type="text" name="region" minlength="9" maxlength="9" required><br>
+        <label for="nr konta">Numer konta*</label>
+        <input type="text" name="nr konta" minlength="26" maxlength="26" required><br>
+
+            
+
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
